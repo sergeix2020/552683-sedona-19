@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Сергей Обухов](https://up.htmlacademy.ru/adaptive/19/user/552683).
+* Студент: [Сергей Обухов](https://htmlacademy.ru/profile/id552683).
 * Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
