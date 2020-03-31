@@ -1,91 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Фото</title>
 </head>
-<body>
+<body class="page">
   <header class="page-header">
       <a href="#" class="page-header__logo">
-        <img class ="page-header__logo-image" src="https://via.placeholder.com/100x80" alt="Седона">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/100x80" alt="Седона">
       </a>
       <nav class="main-nav">
-        <button class = "main-nav__toogle" type ="button">Закрыть</button>
+        <button class="main-nav__toogle" type ="button">Закрыть</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__main">
-              <a href = "#">Главная</a>
+              <a href="#">Главная</a>
             </li>
             <li class="site-list__photo-video">
-              <a href ="#">Фото и видео</a>
+              <a href="#">Фото и видео</a>
             </li>
             <li class="site-list__form-feedback">
               <a href = "#">Форма отзыва</a>
             </li>
             <li class="site-list__htmlacademy">
-              <a href = "#">Htmlacademy</a>
+              <a href="#">Htmlacademy</a>
             </li>
             <li class="site-list__close">
-              <a href = "#">Закрыть</a></li>
+              <a href="#">Закрыть</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <img src="https://via.placeholder.com/320x260" alt="Sedona">
+    <main class="page__page-main page-main">
+      <div class = "page-main__img-sedona"></div>
       <h2 class = "page-main__header">
         <span class="page-main__header--name">sedona</span>
       </h2>
-        <section class="photo-video">
+        <section class="page-main__photo-video photo-video">
           <h2 class = photo-video__list>
             фото и видео
           </h2>
           <p class="photo-video__description">
             Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике
           </p>
-          <img class="photo-video__spaces-img" src="https://via.placeholder.com/280x280" alt="фото Бориса">
-          <h3 class="photo-video__spaces-title">
-            Неродные просторы
-          </h3>
-          <p class="photo-video__author">
-            Автор фото:Борис
-          </p>
-          <span class="photo-video__count-number">1350</span>
-          <img class="photo-video__vegetation-img" src="https://via.placeholder.com/280x280" alt="фото Сергея">
-          <h3 class="photo-video__vegetation-title">
-            Местная растительность
-          </h3>
-          <p class="photo-video__author">
-            Автор фото:Серей
-          </p>
-          <span class="photo-video__count-number">143</span>
-          <img class="photo-video__road-img" src="https://via.placeholder.com/280x280" alt="фото Петра">
-          <h3 class="photo-video__road-title">
-            Дорога на север
-          </h3>
-          <p class="photo-video__author">
-            Автор фото:Петр
-          </p>
-          <span class="photo-video__count-number">96</span>
-          <img class="photo-video__bridge-img" src="https://via.placeholder.com/280x280" alt="фото Сергея">
-          <h3 class="photo-video__bridge-title">
-            Мост дьявола
-          </h3>
-          <p class="photo-video__author">
-            Автор фото:Антон
-          </p>
-          <span class="photo-video__count-nmber">254</span>
-          <h2 class="photo-video__title-Advantages">
+          <ul class="photo-video__photo-video-list photo-video-list">
+            <li class ="photo-video-list-item">
+              <div class="photo-video-list__spaces-img"></div>
+              <h3 class="photo-video-list__spaces-title">
+                Неродные просторы
+              </h3>
+              <p class="photo-video-list__author">
+                Автор фото:Борис
+              </p>
+              <span class="photo-video-list__count-number">1350</span>
+            </li>
+            <li class ="photo-video-list-item">
+              <div class="photo-video-list__vegetation-img"></div>
+              <h3 class="photo-video__vegetation-title">
+                Местная растительность
+              </h3>
+              <p class="photo-video-list__author">
+                Автор фото:Серей
+              </p>
+              <span class="photo-video-list__count-number">143</span>
+            </li>
+            <li>
+              <div class="photo-video-list__road-img"></div>
+              <h3 class="photo-video__road-title">
+                Дорога на север
+              </h3>
+              <p class="photo-video-list__author">
+                Автор фото:Петр
+              </p>
+              <span class="photo-video-list__count-number">96</span>
+            </li>
+            <li>
+              <img class="photo-video-list__bridge-img">
+              <h3 class="photo-video-list__bridge-title">
+                Мост дьявола
+              </h3>
+              <p class="photo-video-list__author">
+                Автор фото:Антон
+              </p>
+              <span class="photo-video-list__count-nmber">254</span>
+            </li>
+          </ul>
+          <h2 class="photo-video-list__title-Advantages">
             Все еще сомневаетесь?
           </h2>
-          <p class="photo-video__description-Advantages">
+          <p class="photo-video-list__description-Advantages">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз.
           </p>
+          <img class = "photo-video-list__video-presents" src="https://via.placeholder.com/320x280" alt="видеопрезентация">
+          <div class="photo-video__video-controls">
+         <!--  Здесь будут svg элементы. -->
+          </div>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page__page-footer page-footer">
       <section class="contacts">
-        <h2 class="contacts-article">
+        <h2 class="page__contacts-article">
           #visitsedona
         </h2>
         <ul class="contacts social">

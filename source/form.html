@@ -1,48 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Форма</title>
 </head>
-<body>
-  <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img class ="page-header__logo-image" src="https://via.placeholder.com/100x80" alt="Седона">
+<body class = "page">
+
+  <header class = "page__page-header page-header">
+    <div class = "page-header__logo-wrapper logo-wrapper">
+      <a href="#" class="logo-wrapper__logo">
+        <img class = "logo-wrapper__logo-image" src="https://via.placeholder.com/100x80" alt = "Седона">
       </a>
-      <nav class="main-nav">
-        <button class = "main-nav__toogle" type ="button">Закрыть</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__main">
-              <a href = "#">Главная</a>
-            </li>
-            <li class="site-list__photo-video">
-              <a href ="#">Фото и видео</a>
-            </li>
-            <li class="site-list__form-feedback">
-              <a href = "#">Форма отзыва</a>
-            </li>
-            <li class="site-list__htmlacademy">
-              <a href = "#">Htmlacademy</a>
-            </li>
-            <li class="site-list__close">
-              <a href = "#">Закрыть</a></li>
-          </ul>
-        </div>
+    </div>
+    <div class = "page-header__toogle-wrapper">
+      <button class = "main-nav__toogle" type ="button">Закрыть</button>
+    </div>
+    <nav class = "page__main-nav main-nav">
+      <ul class = "main-nav__list site-list">
+        <li class = "site-list__main">
+          <a href = "#">Главная</a>
+        </li>
+        <li class ="site-list__photo-video">
+          <a href = "#">Фото и видео</a>
+        </li>
+        <li class = "site-list__form-feedback">
+          <a href = "#">Форма отзыва</a>
+        </li>
+        <li class="site-list__htmlacademy">
+          <a href = "#">Htmlacademy</a>
+        </li>
+        <li class="site-list__close">
+          <a href = "#">Закрыть</a></li>
+        </ul>
       </nav>
     </header>
-    <main class="page-main">
-      <img src="https://via.placeholder.com/320x260" alt="Sedona">
+
+    <main class="page__page-main page-main">
+      <div class="page-main__sedona-img"></div>
       <h2 class = "page-main__header">
-        <span class="page-main__header--name">Welcome</span>
+        <p class="page-main__header--name">Sedona</p>
       </h2>
+      <section class="review">
+        <h2 class="review__review-presents">
+          Оставьте свой отзыв
+        </h2>
+        <p class="review__review-descriotion">
+          Помогите нашим отелям стать лучше!
+          Оставьте отзыв о них, а также о посещенных вами достопримечательностях.
+        </p>
+      </section>
+      <section class="form-review">
+        <p class="form-review__presents">
+          Представьтесь
+        </p>
+        <label for="name">Имя</label>
+        <input type="text" id = "name" placeholder="Петр">
+        <label for="fio">Фамилия</label>
+        <input type="text" id = "fio" placeholder="Иванов">
+        <label for="patronymic">Фамилия</label>
+        <input type="text" id = "patronymic" placeholder="Александрович">
+        <h2 class="form-review__contact-info">Контактная информация:</h2>
+        <label for="phone">Контактный телефон</label>
+        <input type="text" id = "phone" placeholder="Введите телефон">
+        <label for="email">Электронная почта</label>
+        <input type="text" id = "email" placeholder="Введите e-mail">
+        <p class="form-review__impression">
+          Ваше общее впечатление
+        </p>
+        <input type="radio" id = "impression-positive" name ="impression" value = "1">
+        <label for="impression-positive">Скорее положительное</label>
+        <input type="radio" id = "impression-negative" name ="impression" value = "2">
+        <label for="impression-negative">Скорее отрицательное</label>
+        <input type="radio" id = "impression-hard-answer" name ="impression" value = "3">
+        <label for="impression-negative">Затрудняюсь ответить</label>
+        <p class="visited-attractions">
+          Посещенные достопримечательности
+        </p>
+        <label for="bridge">Мост дьявола</label>
+        <input type="checkbox" id = "bridge" name ="bridge" value = "1" checked>
+        <label for="Mountain">Гора-Колокол</label>
+        <input type="checkbox" id = "Mountain" name ="Mountain" value = "2" checked>
+        <label for="park">Слайд-Парк</label>
+        <input type="checkbox" id = "park" name ="park" value = "3" checked>
+        <label for="red-rocks">Красные скалы</label>
+        <input type="checkbox" id = "red-rocks" name ="red-rocks" value = "4">
+        <p class="form-review__presents-delight">
+          Опишите подробно все свои восторги
+        </p>
+        <button type = "submit">Отправить отзыв</button>
+      </section>
     </main>
-    <footer class="main-footer">
-      <section class="contacts">
+
+    <footer class="page__main-footer main-footer">
+      <section class="main-footer__contacts contacts">
         <h2 class="contacts-article">
           #visitsedona
         </h2>
-        <ul class="contacts social">
+        <ul class="main-footer__social social">
           <li class  = "social__odnoclassniki">
             <a href = "#">
               <img src = "https://via.placeholder.com/25x25">odnoclassniki
@@ -59,11 +113,12 @@
             </a>
           </li>
         </ul>
-        <div class="contacts-info">
-        <p class="contats">Разработано</p>
-        <img src="#" alt="">
-      </div>
+        <div class="main-footer__contacts-info contacts-info">
+          <p class="contacts-info__contats">Разработано</p>
+          <img src="#" alt="">
+        </div>
       </section>
     </footer>
-</body>
-</html>
+
+  </body>
+  </html>
