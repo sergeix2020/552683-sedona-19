@@ -6,31 +6,36 @@
 </head>
 <body class="page">
   <header class="page-header">
+    <div class="page-header__logo-wrapper logo-wrapper">
       <a href="#" class="page-header__logo">
         <img class="page-header__logo-image" src="https://via.placeholder.com/100x80" alt="Седона">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type ="button">Закрыть</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__main">
-              <a href="#">Главная</a>
-            </li>
-            <li class="site-list__photo-video">
-              <a href="#">Фото и видео</a>
-            </li>
-            <li class="site-list__form-feedback">
-              <a href = "#">Форма отзыва</a>
-            </li>
-            <li class="site-list__htmlacademy">
-              <a href="#">Htmlacademy</a>
-            </li>
-            <li class="site-list__close">
-              <a href="#">Закрыть</a></li>
-          </ul>
-        </div>
-      </nav>
+    </div>
+    <div class = "page-header__toogle-wrapper">
+      <button class = "main-nav__toogle" type ="button">Закрыть</button>
+    </div>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__main">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__photo-video">
+            <a href="#">Фото и видео</a>
+          </li>
+          <li class="site-list__form-feedback">
+            <a href = "#">Форма отзыва</a>
+          </li>
+          <li class="site-list__htmlacademy">
+            <a href="#">Htmlacademy</a>
+          </li>
+          <li class="site-list__close">
+            <a href="#">Закрыть</a></li>
+        </ul>
+      </div>
+    </nav>
     </header>
+
     <main class="page__page-main page-main">
       <div class = "page-main__img-sedona"></div>
       <h2 class = "page-main__header">
@@ -94,16 +99,15 @@
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз.
           </p>
           <img class = "photo-video-list__video-presents" src="https://via.placeholder.com/320x280" alt="видеопрезентация">
-          <div class="photo-video__video-controls">
-          </div>
+          <div class="photo-video__video-controls"></div>
         </section>
     </main>
-    <footer class="page__page-footer page-footer">
-      <section class="contacts">
-        <h2 class="page__contacts-article">
+    <footer class="page__main-footer main-footer">
+      <section class="main-footer__contacts contacts">
+        <h2 class="contacts-article">
           #visitsedona
         </h2>
-        <ul class="contacts social">
+        <ul class="main-footer__social social">
           <li class  = "social__odnoclassniki">
             <a href = "#">
               <img src = "https://via.placeholder.com/25x25">odnoclassniki
@@ -120,10 +124,10 @@
             </a>
           </li>
         </ul>
-        <div class="contacts-info">
-        <p class="contats">Разработано</p>
-        <img src="#" alt="">
-      </div>
+        <div class="main-footer__contacts-info contacts-info">
+          <p class="contacts-info__contats">Разработано</p>
+          <img src="#" alt="">
+        </div>
       </section>
     </footer>
 </body>
