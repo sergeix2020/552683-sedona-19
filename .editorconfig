@@ -1,31 +1,4 @@
-<footer class="page__main-footer main-footer">
-      <section class="main-footer__contacts contacts">
-        <h2 class="contacts-article">
-          #visitsedona
-        </h2>
-        <ul class="main-footer__social social">
-          <li class  = "social__odnoclassniki">
-            <a href = "#">
-              <img src = "https://via.placeholder.com/25x25">odnoclassniki
-            </a>
-          </li>
-          <li class  = "social__facrbook">
-            <a href = "#">
-              <img src = "https://via.placeholder.com/25x25">facrbook
-            </a>
-          </li class  = "social__vk">
-          <li>
-            <a href = "#">
-              <img src = "https://via.placeholder.com/25x25">vk
-            </a>
-          </li>
-        </ul>
-        <div class="main-footer__contacts-info contacts-info">
-          <p class="contacts-info__contats">Разработано</p>
-          <img src="#" alt="">
-        </div>
-      </section>
-    </footer># Файл с настройками для редактора.
+# Файл с настройками для редактора.
 #
 # Если вы разрабатываете в редакторе WebStorm, BBEdit, Coda или SourceLair
 # этот файл уже поддерживается и не нужно производить никаких дополнительных

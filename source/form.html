@@ -4,43 +4,41 @@
   <meta charset="UTF-8">
   <title>Форма</title>
 </head>
-<body class = "page">
+<body class="page">
 
-  <header class = "page__page-header page-header">
-    <div class = "page-header__logo-wrapper logo-wrapper">
-      <a href="#" class="logo-wrapper__logo">
-        <img class = "logo-wrapper__logo-image" src="https://via.placeholder.com/100x80" alt = "Седона">
-      </a>
+  <header class="page__page-header page-header">
+    <div class="page-header__logo-wrapper logo-wrapper">
+      <div class="logo-wrapper__logo logo">
+        <a href="#" class="logo__logo-link">
+          <img class = "logo__logo-image" src="https://via.placeholder.com/100x80" alt = "Седона">
+        </a>
+      </div>
     </div>
-    <div class = "page-header__toogle-wrapper">
-      <button class = "main-nav__toogle" type ="button">Закрыть</button>
-    </div>
-    <nav class = "page__main-nav main-nav">
-      <ul class = "main-nav__list site-list">
-        <li class = "site-list__main">
-          <a href = "#">Главная</a>
+      <button class="main-nav__toogle" type ="button">Закрыть</button>
+    <nav class="page__main-nav main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__main">
+          <a>Главная</a>
         </li>
-        <li class ="site-list__photo-video">
-          <a href = "#">Фото и видео</a>
+        <li class="site-list__photo-video">
+          <a href="#">Фото и видео</a>
         </li>
-        <li class = "site-list__form-feedback">
-          <a href = "#">Форма отзыва</a>
+        <li class="site-list__form-feedback">
+          <a href="#">Форма отзыва</a>
         </li>
         <li class="site-list__htmlacademy">
-          <a href = "#">Htmlacademy</a>
+          <a href="#">Htmlacademy</a>
         </li>
         <li class="site-list__close">
-          <a href = "#">Закрыть</a></li>
+          <a href="#">Закрыть</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="page__page-main page-main">
       <div class="page-main__sedona-img"></div>
-      <h2 class = "page-main__header">
-        <p class="page-main__header--name">Sedona</p>
-      </h2>
-      <section class="review">
+      <p class="page-main__header">Sedona</p>
+      <section class="review__review__wrapper">
         <h2 class="review__review-presents">
           Оставьте свой отзыв
         </h2>
@@ -49,73 +47,86 @@
           Оставьте отзыв о них, а также о посещенных вами достопримечательностях.
         </p>
       </section>
-      <section class="form-review">
-        <p class="form-review__presents">
-          Представьтесь
-        </p>
-        <label for="name">Имя</label>
-        <input type="text" id = "name" placeholder="Петр">
-        <label for="fio">Фамилия</label>
-        <input type="text" id = "fio" placeholder="Иванов">
-        <label for="patronymic">Фамилия</label>
-        <input type="text" id = "patronymic" placeholder="Александрович">
-        <h2 class="form-review__contact-info">Контактная информация:</h2>
-        <label for="phone">Контактный телефон</label>
-        <input type="text" id = "phone" placeholder="Введите телефон">
-        <label for="email">Электронная почта</label>
-        <input type="text" id = "email" placeholder="Введите e-mail">
-        <p class="form-review__impression">
-          Ваше общее впечатление
-        </p>
-        <input type="radio" id = "impression-positive" name ="impression" value = "1">
-        <label for="impression-positive">Скорее положительное</label>
-        <input type="radio" id = "impression-negative" name ="impression" value = "2">
-        <label for="impression-negative">Скорее отрицательное</label>
-        <input type="radio" id = "impression-hard-answer" name ="impression" value = "3">
-        <label for="impression-negative">Затрудняюсь ответить</label>
-        <p class="visited-attractions">
-          Посещенные достопримечательности
-        </p>
-        <label for="bridge">Мост дьявола</label>
-        <input type="checkbox" id = "bridge" name ="bridge" value = "1" checked>
-        <label for="Mountain">Гора-Колокол</label>
-        <input type="checkbox" id = "Mountain" name ="Mountain" value = "2" checked>
-        <label for="park">Слайд-Парк</label>
-        <input type="checkbox" id = "park" name ="park" value = "3" checked>
-        <label for="red-rocks">Красные скалы</label>
-        <input type="checkbox" id = "red-rocks" name ="red-rocks" value = "4">
-        <p class="form-review__presents-delight">
-          Опишите подробно все свои восторги
-        </p>
-        <button type = "submit">Отправить отзыв</button>
+      <section class="page-main__form-review form-review">
+        <h2 class="visually-hidden">форма</h2>
+        <form class ="page-main__form-contacts form-contacts" action="#">
+          <h2 class="form-contacts__presents">Представьтесь</h2>
+          <p class="form-contacts__name-wrapper">
+            <label for="name">Имя</label>
+            <input type="text" id = "name" placeholder="Петр">
+          </p>
+          <p class="form-contacts__surname-wrapper">
+            <label for="surname">Фамилия</label>
+            <input type="text" id = "surname" placeholder="Иванов">
+          </p>
+          <p class="form-contacts__patronymic-wrapper">
+            <label for="patronymic">Отчество</label>
+            <input type="text" id = "patronymic" placeholder="Александрович">
+          </p>
+          <h2 class="form-contacts__contact-info">Контактная информация:</h2>
+          <p class="form-contacts__contacts-phone-wrapper">
+            <label for="phone">Контактный телефон</label>
+            <input type="text" id = "phone" placeholder="Введите телефон">
+          </p>
+          <p class="email">
+            <label for="email">Электронная почта</label>
+            <input type="text" id = "email" placeholder="Введите e-mail">
+          </p>
+          <h2 class="form-contacts__impression">Ваше общее впечатление</h2>
+          <p class="form-contacts__impression-positive-wrapper">
+            <input type="radio" id = "impression-positive" name ="impression" value = "1">
+            <label for="impression-positive">Скорее положительное</label>
+          </p>
+          <p class="form-contacts__impression-negative-wrapper">
+            <input type="radio" id = "impression-negative" name ="impression" value = "2">
+            <label for="impression-negative">Скорее отрицательное</label>
+          </p>
+          <p class="form-contacts__impression-hard-answer-wrapper">
+            <input type="radio" id = "impression-hard-answer" name ="impression" value = "3">
+            <label for="impression-negative">Затрудняюсь ответить</label>
+          </p>
+          <h2 class="form-contacts__visited-attractions"> Посещенные достопримечательности</h2>
+          <p class="form-contacts__bridge-wrapper">
+            <label for="bridge">Мост дьявола</label>
+            <input type="checkbox" id = "bridge" name ="bridge" value = "1" checked>
+          </p>
+          <p class="form-contacts__Mountain-wrapper">
+            <label for="Mountain">Гора-Колокол</label>
+            <input type="checkbox" id = "Mountain" name ="Mountain" value = "2" checked>
+          </p>
+          <p class="form-contacts__park-wrapper">
+            <label for="park">Слайд-Парк</label>
+            <input type="checkbox" id = "park" name ="park" value = "3" checked>
+          </p>
+          <p class="form-contacts__red-rocks-wrapper">
+            <label for="red-rocks">Красные скалы</label>
+            <input type="checkbox" id = "red-rocks" name ="red-rocks" value = "4">
+          </p>
+          <p class="form-сontacts__presents-delight">
+            Опишите подробно все свои восторги
+          </p>
+          <button type="submit">Отправить отзыв</button>
+        </form>
       </section>
     </main>
 
     <footer class="page__main-footer main-footer">
       <section class="main-footer__contacts contacts">
-        <h2 class="contacts-article">
-          #visitsedona
-        </h2>
+        <h2 class="visually-hidden">Подвал сайта</h2>
+        <p class="contacts-article">#visitsedona</p>
         <ul class="main-footer__social social">
-          <li class  = "social__odnoclassniki">
-            <a href = "#">
-              <img src = "https://via.placeholder.com/25x25">odnoclassniki
-            </a>
+          <li class="social__twitter">
+            <a href="#"></a>
           </li>
-          <li class  = "social__facrbook">
-            <a href = "#">
-              <img src = "https://via.placeholder.com/25x25">facrbook
-            </a>
-          </li class  = "social__vk">
-          <li>
-            <a href = "#">
-              <img src = "https://via.placeholder.com/25x25">vk
-            </a>
+          <li class="social__facebook">
+            <a href="#"></a>
+          </li>
+          <li class="social__youtube">
+            <a href="#"></a>
           </li>
         </ul>
         <div class="main-footer__contacts-info contacts-info">
           <p class="contacts-info__contats">Разработано</p>
-          <img src="#" alt="">
         </div>
       </section>
     </footer>
