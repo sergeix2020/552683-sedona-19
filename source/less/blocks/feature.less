@@ -1,5 +1,6 @@
 .feature{
     list-style: none;
+
     .feature__description--color-change{
         font-weight: bold;
         font-size: 18px;
@@ -16,12 +17,66 @@
         text-align: center;
         padding-top:40px;
     }
-    .feature__description--name{
+    .feature__description--house{
+        position: relative;
         font-weight: bold;
         font-size: 18px;
         line-height: 26px;
         color:#000000;
-        padding-left:40px;
+        padding:10px 0;
+        padding-left:70px;
+        &::before{
+            content: "";
+            position: absolute;
+            top:5px;
+            left:20px;
+            width:35px;
+            height: 35px; ;
+            background-image:url("../img/icon-house.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    .feature__description--gift{
+        position: relative;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        color:#000000;
+        padding:10px 0;
+        padding-left:70px;
+        &::before{
+            content: "";
+            position: absolute;
+            top:5px;
+            left:20px;
+            width:35px;
+            height: 35px; ;
+            background-image:url("../img/icon-gift.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    .feature__description--burger{
+        position: relative;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        color:#000000;
+        padding:10px 0;
+        padding-left:70px;
+        &::before{
+            content: "";
+            position: absolute;
+            top:5px;
+            left:20px;
+            width:35px;
+            height: 35px; ;
+            background-image:url("../img/icon-burger.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+    
+        }
     }
     .feature__priority-number{
         display: block;
@@ -46,10 +101,18 @@
         margin:0 auto;
     }
     .feature__priority--change{
-        padding-left:40px;
+        padding-left:70px;
         padding-bottom:40px;
     }
     .feature__img--sedona-img{
+        background-image:url("../img/main-city-mobile@1x.jpg");
+        background-color:green;
+        width:320px;
+        height:260px;
+        background-size: cover;
+    }
+    .feature__img--devils-bridge-img{
+        background-image:url("../img/photo-bridge-mobile@1x.jpg");
         background-color:green;
         width:320px;
         height:260px;

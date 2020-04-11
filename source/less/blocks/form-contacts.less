@@ -6,17 +6,88 @@
         font-size: 18px;
         line-height: 26px;
         text-align: center;
+        padding:20px 0;
     }
     .form-contacts__item{
+        position: relative;
         text-transform: uppercase;
         font-size: 14px;
         line-height: 26px;
+    }
+    .form-contacts__item--phone{
+        position: relative;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 26px;
+        &::after{
+            content: "";
+            position: absolute;
+            top:27px;
+            right:5px;
+            width:50px;
+            height: 50px; 
+            background-color:#e6e6e6;
+            background-image:url("../img/icon-phone.svg");
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+            background-position: 10px 10px;
+    
+        }
+    }
+    .form-contacts__item--email{
+        position: relative;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 26px;
+        &::after{
+            content: "";
+            position: absolute;
+            top:27px;
+            right:5px;
+            width:50px;
+            height: 50px; 
+            background-color:#e6e6e6;
+            background-image:url("../img/icon-mail.svg");
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+            background-position: 10px 10px;
+    
+        }
     }
     .form-contacts__input{
         font-size: 14px;
         line-height: 26px;
         font-weight: bold;
         color:green;
+        margin-left:5px;
+        padding:13px 0;
         padding-left:15px;
+        background-color:#f2f2f2;
+        border:none;
+    }
+    .form-contacts__label--contacts{
+        padding-left:15px;
+    }
+    .form-contacts__input--surname{
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: bold;
+        color:green;
+        padding:13px 0;
+        padding-left:15px;
+        margin-left:5px;
+        background-color:#f2f2f2;
+        border:none;
+    }
+    .form-contacts__input--radio{
+        width:25px;
+        height: 25px;
+        
+    }
+    .form-contacts__textarea{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        padding-left:20px;
     }
 }
